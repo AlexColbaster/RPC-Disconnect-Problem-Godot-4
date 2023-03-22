@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://7qrebi2gqtno"]
+
+[ext_resource type="Script" path="res://corrected_main.gd" id="1_hwnsn"]
+[ext_resource type="Texture2D" uid="uid://tygpa34kkora" path="res://icon.png" id="2_g1k6h"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_hwnsn")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(576, 306)
+texture = ExtResource("2_g1k6h")
+
+[node name="MyID" type="Label" parent="."]
+offset_right = 576.0
+offset_bottom = 32.0
+scale = Vector2(2, 2)
+
+[node name="Observer" type="Label" parent="."]
+offset_right = 576.0
+offset_bottom = 32.0
+scale = Vector2(2, 2)
+text = "Observer"
+horizontal_alignment = 2
+
+[node name="IsObserver" type="CheckButton" parent="."]
+offset_left = 917.0
+offset_top = 2.0
+offset_right = 961.0
+offset_bottom = 26.0
+scale = Vector2(2, 2)
+focus_mode = 0
